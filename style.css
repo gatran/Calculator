@@ -1,0 +1,19 @@
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: grey;
+    display: grid;
+    margin: auto;
+}
+
+#grid-item-head {
+    grid-column: span 4;
+    margin: 20px;
+    background-color: white;
+}
+
+.grid-item-button {
+    margin: 20px;
+    justify-self: center;
+    align-self: center;
+}
