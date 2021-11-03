@@ -13,7 +13,14 @@
 }
 
 .grid-item-button {
-    margin: 20px;
     justify-self: center;
     align-self: center;
+    background-color: grey;
+}
+
+#grid-item-foot {
+    grid-column: span 4;
+    justify-self: center;
+    align-self: center;
+    background-color: grey;
 }
