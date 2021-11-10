@@ -11,23 +11,25 @@
 <body>
     <div id="container">
         <div id="grid-item-head"></div>
-        <button class="grid-item-button">9</button>
-        <button class="grid-item-button">8</button>
-        <button class="grid-item-button">7</button>
-        <button class="grid-item-button">+</button>
-        <button class="grid-item-button">6</button>
-        <button class="grid-item-button">5</button>
-        <button class="grid-item-button">4</button>
-        <button class="grid-item-button">-</button>
-        <button class="grid-item-button">3</button>
-        <button class="grid-item-button">2</button>
-        <button class="grid-item-button">1</button>
-        <button class="grid-item-button">*</button>
-        <button class="grid-item-button">.</button>
-        <button class="grid-item-button">0</button>
-        <button class="grid-item-button">=</button>
-        <button class="grid-item-button">/</button>
-        <button id="grid-item-foot">Clear</button>
+        <button class="grid-item-button-extra" onclick="clearDisplay()">C</button>
+        <button class="grid-item-button-extra" onclick="posNeg()">+/-</button>
+        <button class="grid-item-button-extra" onclick="mod()">%</button>
+        <button class="grid-item-button-oper" onclick="display_operator('/')">/</button>
+        <button class="grid-item-button-num" onclick="display('7')">7</button>
+        <button class="grid-item-button-num" onclick="display('8')">8</button>
+        <button class="grid-item-button-num" onclick="display('9')">9</button>
+        <button class="grid-item-button-oper" onclick="display_operator('*')">*</button>
+        <button class="grid-item-button-num" onclick="display('4')">4</button>
+        <button class="grid-item-button-num" onclick="display('5')">5</button>
+        <button class="grid-item-button-num" onclick="display('6')">6</button>
+        <button class="grid-item-button-oper" onclick="display_operator('-')">-</button>
+        <button class="grid-item-button-num" onclick="display('1')">1</button>
+        <button class="grid-item-button-num" onclick="display('2')">2</button>
+        <button class="grid-item-button-num" onclick="display('3')">3</button>
+        <button class="grid-item-button-oper" onclick="display_operator('+')">+</button>
+        <button class="grid-item-button-zero" onclick="display('0')">0</button>
+        <button class="grid-item-button-extra" onclick="display('.')">.</button>
+        <button class="grid-item-button-oper" onclick="operate()">=</button>
     </div>
 </body>
 </html>

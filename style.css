@@ -1,26 +1,43 @@
+html {
+    font-family: Helvetica;
+}
+
 #container {
     height: 500px;
     width: 500px;
     background-color: grey;
     display: grid;
     margin: auto;
+    border: 15px solid;
 }
 
 #grid-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: end;
     grid-column: span 4;
-    margin: 20px;
-    background-color: white;
+    background-color: black;
+    color: white;
+    font-size: 75px;
 }
 
-.grid-item-button {
-    justify-self: center;
-    align-self: center;
-    background-color: grey;
+.grid-item-button-num {
+    background-color: lightgrey;
+    font-size: 25px;
 }
 
-#grid-item-foot {
-    grid-column: span 4;
-    justify-self: center;
-    align-self: center;
-    background-color: grey;
+.grid-item-button-oper {
+    background-color: skyblue;
+    font-size: 25px;
+}
+
+.grid-item-button-extra {
+    background-color: lightgrey;
+    font-size: 25px;
+}
+
+.grid-item-button-zero {
+    background-color: lightgrey;
+    grid-column: span 2;
+    font-size: 25px;
 }
